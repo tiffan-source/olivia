@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+    createBrowserRouter,
+    RouterProvider
+} from 'react-router-dom';
+import Home from './views/Home/Home';
+import Olivia from './views/Olivia/Olivia';
+import Navbar from './common/Navbar/Navbar';
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Home />
+    },
+    {
+        path: '/olivia',
+        element: <Olivia />
+    }
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="overflow-x-hidden min-h-screen">
+        <Navbar/>
+      <RouterProvider router={router} />
     </div>
   );
 }

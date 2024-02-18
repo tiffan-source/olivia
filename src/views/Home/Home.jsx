@@ -3,6 +3,8 @@ import Hero from './Hero/Hero'
 import Slide from './Slide/Slide'
 import NextEvent from './NextEvent/NextEvent'
 import MainArtiste from './MainArtiste/MainArtiste'
+import Contact from './Contact/Contact'
+import Footer from './Footer/Footer'
 
 function Home() {
   return (
@@ -11,6 +13,9 @@ function Home() {
         <Slide/>
         <NextEvent/>
         <MainArtiste/>
+
+        <Contact/>
+        <Footer/>
     </div>
   )
 }

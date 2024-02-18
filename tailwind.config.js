@@ -10,6 +10,16 @@ module.exports = {
           'bodoni': ['Bodoni Moda', 'serif'],
           'lato': ['Lato', 'sans-serif'],
         },
+        keyframes: {
+            scroll1: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
+            },
+            scroll2: {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(0%)' },
+            },
+        }
       },
     },
     plugins: [],

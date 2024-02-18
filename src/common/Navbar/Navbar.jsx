@@ -16,7 +16,7 @@ function Navbar() {
                 <img className='w-10 h-10' src={barsIcon} alt="" srcset="" onClick={()=>{toogleMenu()}}/>
             </span>
         </div>
-        <div className={"absolute bg-[#222] w-screen h-screen top-0 transition-all " + (close ? 'left-0' : '-left-full')}>
+        <div className={"absolute bg-[#222] w-screen h-screen top-0 transition-all z-50 " + (close ? 'left-0' : '-left-full')}>
             <div className='flex justify-center items-center w-full h-full relative'>
                 <img src={closeIcon} alt="" srcset=""
                 className='absolute top-4 right-4 w-10 h-10 cursor-pointer'

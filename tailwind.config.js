@@ -13,7 +13,7 @@ module.exports = {
         keyframes: {
             scroll1: {
                 '0%': { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(-50%)' },
             },
             scroll2: {
                 '0%': { transform: 'translateX(100%)' },
@@ -22,5 +22,5 @@ module.exports = {
         }
       },
     },
-    plugins: [],
+    plugins: []
 }

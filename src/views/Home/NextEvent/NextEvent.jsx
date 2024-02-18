@@ -19,8 +19,8 @@ function NextEvent() {
             <span className='inline-block w-6 h-6 rounded-full bg-black'></span>
             <span className='text-xl font-inter'>Abidjan, Cocodi</span>
         </div>
-        <div className='realtive border-t border-black'>
-            <div className='absolute flex justify-center items-center w-full h-[1px]'>
+        <div className='relative border-t border-black'>
+            <div className='absolute flex left-1/2 justify-center items-center h-[1px]'>
                 <span className='w-4 h-4 bg-black text-white flex justify-center items-center rounded-full cursor-pointer' onClick={()=>{setHide(!hide)}}>+</span>
             </div>
             <div className={`py-4 relative -z-30 transition ease-in ${hide ? '-translate-y-full' : ''}`}>
